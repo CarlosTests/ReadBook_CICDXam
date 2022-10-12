@@ -1,10 +1,8 @@
-﻿using System;
-using Microsoft.AppCenter;
+﻿using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using ReadBooks.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace ReadBooks
 {

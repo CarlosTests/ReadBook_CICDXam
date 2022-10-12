@@ -25,16 +25,4 @@
   <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Remove="Views\LoginPage.xaml" />
-    <EmbeddedResource Remove="Views\NewBookPage.xaml" />
-    <EmbeddedResource Remove="Views\MainPage.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Models\Book.cs" />
-    <Compile Remove="Views\MainPage.xaml.cs" />
-    <Compile Remove="Views\NewBookPage.xaml.cs" />
-    <Compile Remove="Views\LoginPage.xaml.cs" />
-    <Compile Remove="Services\AppCenterHelper.cs" />
-  </ItemGroup>
 </Project>
