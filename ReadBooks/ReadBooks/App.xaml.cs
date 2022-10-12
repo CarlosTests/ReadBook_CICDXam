@@ -4,6 +4,7 @@ using Microsoft.AppCenter.Crashes;
 using ReadBooks.Views;
 using Xamarin.Forms;
 
+
 namespace ReadBooks
 {
     public partial class App : Application
