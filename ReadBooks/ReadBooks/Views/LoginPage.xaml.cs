@@ -17,8 +17,13 @@ namespace ReadBooks.Views
         {
             try
             {
+                var properties = new Dictionary<string, string>
+            {
+                { "user", "carlos@mail.pt" },
+                { "network", "WiFi" }
+            };
 
-                AppCenterHelper.TrackEvent("user-loged");
+                AppCenterHelper.TrackEvent("logged_in", properties);
 
                 await Navigation.PopModalAsync();
 

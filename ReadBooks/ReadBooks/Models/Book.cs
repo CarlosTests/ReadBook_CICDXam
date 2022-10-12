@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using ReadBooks.Services;
 
 namespace ReadBooks.Models
 {
@@ -14,11 +16,23 @@ namespace ReadBooks.Models
 
         public DateTime FinishedDate { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Name} - {Author}";
+        }
+
         public bool SaveBook()
         {
             //Crashes.GenerateTestCrash();
-            Analytics.TrackEvent("new-book");
+            var properties = new Dictionary<string, string>
+            {
+                { "book_info", this.ToString() },
+                { "network", "cellular" }                
+            };
+
+            AppCenterHelper.TrackEvent("new-book-saved", properties);
             return true;
         }
+
     }
 }
