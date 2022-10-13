@@ -2,11 +2,15 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="ReadBooks.Views.LoginPage">
+    x:Class="ReadBooks.Views.LoginPage"
+    >
+
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
-            <Button Text="Login" Clicked="Login_ButtonClicked"/>
-        </StackLayout>
-        
+            <Button Text="Login"
+                    BackgroundColor="Teal"
+                    Clicked="Login_ButtonClicked"
+                    />
+        </StackLayout>       
     </ContentPage.Content>
 </ContentPage>
