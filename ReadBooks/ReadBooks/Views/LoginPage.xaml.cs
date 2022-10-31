@@ -18,10 +18,10 @@ namespace ReadBooks.Views
             try
             {
                 var properties = new Dictionary<string, string>
-            {
-                { "user", "carlos@mail.pt" },
-                { "network", "WiFi" }
-            };
+                {
+                    { "user", "carlos@mail.pt" },
+                    { "network", "WiFi" }
+                };
 
                 AppCenterHelper.TrackEvent("logged_in", properties);
 
