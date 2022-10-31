@@ -10,6 +10,7 @@
             <Button Text="Login"
                     BackgroundColor="Teal"
                     Clicked="Login_ButtonClicked"
+                    HorizontalOptions="Center"
                     />
         </StackLayout>       
     </ContentPage.Content>
